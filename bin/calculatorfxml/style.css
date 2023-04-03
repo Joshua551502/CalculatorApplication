@@ -1,0 +1,132 @@
+#btnPercent:hover,
+#btnClearEntry:hover,
+#btnClear:hover,
+#btnDivide:hover,
+#btnMultiply:hover,
+#btnMinus:hover,
+#btnPlus:hover {
+    -fx-background-color: #404040;
+    -fx-background-radius: 5 5 5 5;
+}
+
+#btn7:hover,
+#btn8:hover,
+#btn9:hover,
+#btn4:hover,
+#btn5:hover,
+#btn6:hover,
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btnPlusEquals:hover,
+#btn0:hover,
+#btnDot:hover,
+#box42:hover {
+    -fx-background-color: #343434;
+    -fx-background-radius: 5 5 5 5;
+}
+
+#btnEquals:hover {
+    -fx-background-color: #960101;
+    -fx-background-radius: 5 5 5 5;
+}
+
+#main {
+    -fx-background-color: #252525;
+}
+
+* {
+    -fx-font-family: "STIX Two Math";
+}
+
+/* Styles for all StackPane nodes */
+.stack-pane {
+    -fx-background-color: #ee0000;
+    -fx-background-radius: 5 5 5 5;
+    -fx-spacing: 2;
+}
+
+/* Styles for specific StackPane nodes */
+#btnPercent,
+#btnClear,
+#btnDivide,
+#btnClearEntry,
+#btnMultiply,
+#btnMinus,
+#btnPlus {
+    -fx-background-color: #343434;
+}
+
+#btnDivide,
+#btnMultiply,
+#btnMinus,
+#btnPlus {
+    -fx-font-size: 50px;
+}
+
+#btn7,
+#btn8,
+#btn9,
+#btn4,
+#btn5,
+#btn6,
+#btn1,
+#btn2,
+#btn3,
+#btnPlusEquals,
+#btn0,
+#btnDot,
+#box42,
+#btnDecimal,
+#btnNegative {
+    -fx-background-color: #404040;
+}
+
+
+#btnEquals {
+    -fx-background-color: #8B0000;
+}
+
+/* Styles for all Label nodes */
+.label {
+    -fx-font-size: 30px;
+    -fx-text-fill: white;
+}
+
+/* Styles for specific Label nodes */
+#mainLabel {
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+}
+
+#btnPlusEquals label {
+    -fx-font-size: 30px;
+}
+
+#mainBorder {
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-background-color: #565a5c;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-insets: 2px;
+}
+
+
+#gridPane {
+    -fx-background-color: #252525;
+    -fx-border-color: #252525;
+    -fx-border-width: 10px;
+    -fx-background-radius: 5 5 5 5;
+    -fx-border-radius: 5 5 5 5;
+}
+
+#btnDot label,
+#btnPlus label,
+#btnMinus label,
+#btnMultiply label,
+#btnDivide label,
+#btnEquals label {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+

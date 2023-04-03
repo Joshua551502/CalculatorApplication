@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<GridPane fx:id="gridPane" alignment="center" hgap="2" stylesheets="@style.css" vgap="2" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculatorfxml.CalculatorController">
+
+    <!-- NavBar -->
+    <StackPane fx:id="title" prefHeight="100" prefWidth="111" style="-fx-background-color: #252525; -fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="0">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="STANDARD" StackPane.alignment="CENTER" />
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+    </StackPane>
+
+    <!-- Main Pannel -->
+    <StackPane fx:id="main" prefHeight="100" prefWidth="111" style="-fx-background-color: #252525; -fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="1">
+        <AnchorPane fx:id="mainBorder" prefHeight="200.0" prefWidth="200.0" />
+        <Label fx:id="mainLabel" style="-fx-font-size: 50px; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10px;" text="0" StackPane.alignment="TOP_RIGHT" />
+    </StackPane>
+
+
+    <!-- Row 1 -->
+    <StackPane fx:id="btnPercent" onMouseClicked="#onPercentClicked" onMouseEntered="#handleMouseEnteredA" onMouseExited="#handleMouseExitedA" prefHeight="100" prefWidth="111" style=" -fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <ImageView fitHeight="24" fitWidth="28">
+            <Image url="@history_icon.png" />
+        </ImageView>
+    </StackPane>
+    <StackPane fx:id="btnClearEntry" onMouseClicked="#handleClearClick" onMouseEntered="#handleMouseEnteredA" onMouseExited="#handleMouseExitedA" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="CE" />
+    </StackPane>
+    <StackPane fx:id="btnClear" onMouseClicked="#handleClearClick" onMouseEntered="#handleMouseEnteredA" onMouseExited="#handleMouseExitedA" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="C" />
+    </StackPane>
+    <StackPane fx:id="btnDivide" onMouseClicked="#onSymbolClicked" onMouseEntered="#handleMouseEnteredA" onMouseExited="#handleMouseExitedA" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+        <Label style="-fx-text-fill: white;" text="÷" />
+    </StackPane>
+
+    <!-- Row 2 -->
+    <StackPane fx:id="btn7" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="7" />
+    </StackPane>
+    <StackPane fx:id="btn8" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="8" />
+    </StackPane>
+    <StackPane fx:id="btn9" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="9" />
+    </StackPane>
+    <StackPane fx:id="btnMultiply" onMouseClicked="#onSymbolClicked" onMouseEntered="#handleMouseEnteredA" onMouseExited="#handleMouseExitedA" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <Label style="-fx-text-fill: white;" text="×" />
+    </StackPane>
+
+    <!-- Row 3 -->
+    <StackPane fx:id="btn4" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="4" />
+    </StackPane>
+    <StackPane fx:id="btn5" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="5" />
+    </StackPane>
+    <StackPane fx:id="btn6" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="6" />
+    </StackPane>
+    <StackPane fx:id="btnMinus" onMouseClicked="#onSymbolClicked" onMouseEntered="#handleMouseEnteredA" onMouseExited="#handleMouseExitedA" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="-" />
+    </StackPane>
+
+    <!-- Row 4 -->
+    <StackPane fx:id="btn1" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="0" GridPane.rowIndex="5">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="1" />
+    </StackPane>
+    <StackPane fx:id="btn2" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="2" />
+    </StackPane>
+    <StackPane fx:id="btn3" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="3" />
+    </StackPane>
+    <StackPane fx:id="btnPlus" onMouseClicked="#onSymbolClicked" onMouseEntered="#handleMouseEnteredA" onMouseExited="#handleMouseExitedA" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+        <Label style="-fx-text-fill: white;" text="+" />
+    </StackPane>
+    <StackPane fx:id="btn0" onMouseClicked="#onNumberClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111.0" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+        <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="0" />
+    </StackPane>
+    <StackPane fx:id="btnEquals" onMouseClicked="#onSymbolClicked" onMouseEntered="#handleMouseEnteredRed" onMouseExited="#handleMouseExitedRed" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+        <Label style="-fx-text-fill: black;" text="=" />
+    </StackPane>
+    <StackPane fx:id="btnDecimal" onMouseClicked="#onDecimalClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+        <children>
+            <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="." />
+        </children>
+    </StackPane>
+    <StackPane fx:id="btnNegative" onMouseClicked="#onNegativeClicked" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="100" prefWidth="111.0" style="-fx-background-radius: 5 5 5 5; -fx-spacing: 2;" GridPane.rowIndex="6">
+        <children>
+            <Label style="-fx-font-size: 30px; -fx-text-fill: white;" text="(-)" />
+        </children>
+    </StackPane>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
